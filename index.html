@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encriptador.css">
+
+    <link rel="icon" href="imagenes/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="encriptador.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="logoAlura" src="Imagenes/Logo.png" alt="Logo-Alura" title="Alura">
+        </header>
+        
+        <img class="btn-eliminar" id="eliminar" src="Imagenes/eliminar.png" alt="eliminar" onclick="botonEliminar()" title="Eliminar">
+        <textarea class="textarea" id="textarea" spellcheck="false" placeholder="Ingrese el texto"></textarea>
+        
+        <div class="rectangulo">
+            <img class="muñeco" id="muñeco" src="Imagenes/Muñeco.png" alt="Muñeco">
+            <div class="texto-rectangulo" id="texto-rectangulo">
+                <p class="primeraLineaRectangulo">Ningún mensaje fue encontrado</p>
+                <p class="segundaLineaRectangulo">Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+                <!----------------------------- Div contenedor del resultado de la encriptación--------------------------->
+        <div class="textoEncriptado" id="textoEncriptado">
+            <p class="resultado" id="resultado"></p>
+            <button onclick="botonCopiar()" class="copiar" title="Copiar">Copiar</button>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------->
+            
+        </div>
+
+        
+
+        
+
+        
+
+        <div class="aviso" title="Ingrese solo letra minúsculas y sin acentos">
+            <img class="imgAviso" src="Imagenes/icons8-atención-24.png" alt="Icono-Atención">
+            <p class="textoAviso">Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="botones">
+            <button onclick="botonEncriptar()" class="botonEncriptar" title="Encriptar">Encriptar</button>
+            <button onclick="botonDesencriptar()" class="botonDesencriptar" title="Desencriptar">Desencriptar</button>
+        </div>
+
+        <footer>
+            <p>Trabajo realizado por Cristian Toledo</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
